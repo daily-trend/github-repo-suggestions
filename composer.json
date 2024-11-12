@@ -1,0 +1,25 @@
+{
+    "name": "lenovo/github-repo-suggestions",
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\GithubRepoSuggestions\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "suresh",
+            "email": "sureshcseideal@gmail.com"
+        }
+    ],
+    "require": {
+        "knplabs/github-api": "^3.16",
+        "symfony/http-client": "^6.0",
+        "nyholm/psr7": "^1.8",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header-container {
+    background-color: #333;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+.header-container h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.header-container p {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    color: #ddd;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Filters Section */
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filter label {
+    font-weight: 600;
+    color: #333;
+}
+
+.filter select {
+    padding: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+}
+
+.filter select:focus {
+    border-color: #333;
+}
+
+/* Repository Section */
+.repositories {
+    margin-top: 1rem;
+}
+
+.repositories h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.repositories ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+/* Repository Item Styling */
+.repo-item {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.repo-item:hover {
+    background-color: #f1f1f1;
+}
+
+.repo-item a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.repo-item a::after {
+    content: "🔗";
+    margin-left: 0.5rem;
+}
+
+.repo-item p {
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.repo-item .stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.repo-item .label {
+    font-size: 0.8rem;
+    color: #888;
+    background-color: #eee;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    border-top: 1px solid #555;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
